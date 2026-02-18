@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-in-1 Fun Games</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; background-color: #eef2f3; padding: 20px; direction: rtl; }
+        .container { max-width: 400px; margin: auto; }
+        .card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        input { width: 80%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; }
+        button { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; }
+        #res1, #res2 { margin-top: 15px; font-weight: bold; color: #e67e22; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🎮 گیم زون 🎮</h1>
+    <div class="card">
+        <h3>1. نمبر پہچانیں (1-10)</h3>
+        <input type="number" id="numInp" placeholder="نمبر لکھیں...">
+        <button onclick="guess()">چیک کریں</button>
+        <p id="res1"></p>
+    </div>
+    <div class="card">
+        <h3>2. چیٹ بوٹ</h3>
+        <input type="text" id="chatInp" placeholder="کچھ لکھیں...">
+        <button onclick="chat()">بات کریں</button>
+        <p id="res2"></p>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
